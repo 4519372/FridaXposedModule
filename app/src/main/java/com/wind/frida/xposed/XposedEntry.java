@@ -67,7 +67,7 @@ public class XposedEntry implements IXposedHookLoadPackage {
             NativeLibraryHelperExt.copyNativeBinaries(new File(pluginPath), new File(libPath));
         }
 
-        // You can put libfrida-gadget.config under sdcard and copy script file to /data/local/tmp/hook.js
+        // You can put libfrida-gadget.config under sdcard and copy script file to /storage/emulated/0/MT2/apks/hook.js
         // then frida can be used without command line.
         // Or, you can put libfrida-gadget.config.so in the lib path, rebuild and Install this plugin,
         // then the libfrida-gadget.config.so is copied into taget path
